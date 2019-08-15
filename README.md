@@ -13,13 +13,18 @@ DLL injection can be helpful in many ways like it can be used for patching a pro
 ## **How to Use**:
 In cmd type the following command:
 ```cmd
-Dllinjector.exe -[option]
+Dllinjector.exe -[option] [DLL Name] [pid]
 ```
+For help type the following command:
+```cmd
+Dllinjector.exe -h
+```
+
 Various options that are currently available:
 ```
 [-h] ---> help
-[-il] ---> inject the DLL using the loadLibraryA() API
-[-im] ---> inject the DLL by executing its code in the process.
+[-a] ---> inject the DLL using the loadLibraryA() API
+[-m] ---> inject the DLL using Manual Mapping.
 ```
 
 ## **Todo**:
